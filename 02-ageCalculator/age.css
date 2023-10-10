@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0 10px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #ADD8E6;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+
+
+.add-task {
+    width: 40%;
+    padding: 10px 5px;
+  }
+  
+  .add-task-btn {
+    padding: 10px 30px;
+    background: #331010;
+    color: #d4abab;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 4px 2px #ddd;
+  }
+  
+  .add-task-btn:hover {
+    cursor: pointer;
+  }
+  
+  
+  timeline {
+    margin-top: 30px;
+  }
+  
+  .task {
+    list-style: none;
+    position: relative;
+    padding: 0px 15px 15px;
+    border-left: 0.2em var(--base-color) solid;
+    font-size: 14px;
+  }
+  
+  .badge:before {
+    content: "";
+    position: absolute;
+    height: 0.3em;
+    width: 0.3em;
+    top: 0em;
+    left: -0.45em;
+    outline: 0.2em solid #fff;
+    border: 0.2em solid var(--base-color);
+    border-radius: 50%;
+    background-color: #fff;
+  }
+  
+  .active > .badge:before {
+    content: "";
+    position: absolute;
+    height: 0.8em;
+    width: 0.8em;
+    top: 0em;
+    left: -0.7em;
+    border: 0.2em solid var(--base-color);
+    border-radius: 50%;
+    background-color: #fff;
+  }
+  
+  .active > .badge:after {
+    content: "";
+    position: absolute;
+    height: 0.3em;
+    width: 0.3em;
+    top: 0.25em;
+    left: -0.45em;
+    border: 0.2em solid var(--base-color);
+    border-radius: 50%;
+    background-color: var(--base-color);
+  }
+  
+  .timeline-body {
+    padding: 5px 15px;
+    max-width: 300px;
+    margin: 0px 5px;
+    border-radius: 10px;
+  }
+  
+  .title {
+    font-weight: bold;
+  }
+  
+  .timeline-content {
+    color: gray;
+    width: 200px;
+  }
+  
+  .active > .timeline-body {
+    background: var(--base-color);
+    box-shadow: 1px 1px 5px 2px #dedede;
+  }
+
+  row {
+    display: flex;
+  }
+  
+  .col-left {
+    width: 75%;
+    padding: 0px 10px;
+  }
+  
+  .col-right {
+    width: 25%;
+  }
+
+
+
+.wrapper {
+    width: 450px;
+    background: #fff;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+.wrapper header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 25px 30px 10px;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    background: #ff898d;
+    border-radius: 10px 10px 0 0;
+}
+header .icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+header .icons span {
+    height: 38px;
+    width: 38px;
+    margin: 0 1px;
+    cursor: pointer;
+    color: #878787;
+    text-align: center;
+    font-size: 1.9rem;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border-radius: 50%;
+}
+.icons span:last-child {
+    margin-right: -10px;
+}
+header .icons span:hover {
+    background: #f2f2f2;
+}
+header .current-date {
+    font-size: 1.45rem;
+    font-weight: 500;
+}
+.calendar {
+    padding: 20px;
+}
+.calendar ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    list-style: none;
+    text-align: center;
+}
+.calendar .days {
+    margin-bottom: 20px;
+}
+.calendar li {
+    color: #333;
+    width: calc(100% / 7);
+    font-size: 1.07rem;
+}
+.calendar .weeks li {
+    font-weight: 500;
+    cursor: default;
+}
+.calendar .days li {
+    z-index: 1;
+    cursor: pointer;
+    position: relative;
+    margin-top: 30px;
+}
+.days li.inactive {
+    color: #aaa;
+}
+.days li.active {
+    color: #fff;
+}
+.days li::before {
+    position: absolute;
+    content: "";
+    left: 50%;
+    top: 50%;
+    height: 40px;
+    width: 40px;
+    z-index: -1;
+    border-radius: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.days li.active::before {
+    background: #1e90ff;
+}
+.days li:not(.active):hover::before {
+    background: #f2f2f2;
+}
