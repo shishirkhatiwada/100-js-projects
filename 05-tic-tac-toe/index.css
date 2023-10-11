@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+}
+
+
+nav{
+    background-color: black;
+    color: white;
+    height: 6.5rem;
+    font-size: 27px;
+    display: flex;
+    align-items: center;
+    padding: 0 1.2rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+nav ul{
+    list-style: none;
+}
+
+.gameContainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,10vw);
+    grid-template-rows: repeat(3,10vw);
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+}
+
+.box{
+    border: 2px solid black;
+    font-size: 8vw;
+    cursor: pointer;
+    transition: 0.1s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box:hover{
+    background-color: rgb(242, 234, 250);
+}
+
+.gameInfo{
+    padding: 0 3.4rem;
+    font-family: 'Baloo Bhaina 2', cursive;
+}
+
+.gameInfo h1{
+    font-size: 2.5rem;
+}
+
+.imgbox img{
+    /* display: none; */
+    width: 0;
+    transition: width 0.5s ease-in-out;
+}
+
+.br-0{
+    border-right: 0;
+}
+
+.bl-0{
+    border-left: 0;
+}
+
+.bt-0{
+    border-top: 0;
+}
+
+.bb-0{
+    border-bottom: 0;
+}
+
+.info{
+    font-size: 2.5rem;
+}
+
+.btn{
+    border: 0;
+    outline: 0;
+    padding: 1rem 2rem;
+    background-color: black;
+    color: white;
+    font-size: 1.5rem;
+    margin-left: 1.5rem;
+    border-radius: 3rem;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn:hover{
+    background: transparent;
+    color: black;
+    border: 2px solid black;
+}
+
+.btn:active{
+    color: red;
+}
+.line{
+    background-color: #911d91;
+    width: 0;
+    height: 3px;
+    position: absolute;
+    left: 44rem;
+    transition: width 0.6s ease-in-out;
+    z-index: 999;
+}
+
+@media screen and (max-width: 950px){
+    .gameContainer{
+        flex-wrap: wrap;
+    }
+    .gameInfo{
+        margin-top: 3.4rem;
+    }
+    .gameInfo h1{
+        font-size: 1.5rem;
+    }
+    .container{
+        grid-template-columns: repeat(3,20vw);
+        grid-template-rows: repeat(3,20vw);
+    }
+}
