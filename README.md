@@ -23,3 +23,19 @@ Welcome to the Hacktoberfest 2023 JavaScript Projects repository. This repositor
 ```bash
 git checkout -b feature/your-feature-name
 
+4. Commit your changes:
+```bash
+git commit -m "Add your meaningful commit message here"
+
+
+🙌 Contributors
+A big thank you to all the contributors who have made this repository awesome:
+regrads,
+Shishir Khatiwada
+monomooncodes
+
+📄 License
+This repository is open-source and available under the MIT License. Feel free to use, modify, and distribute it as you see fit.
+
+Happy hacking, and let's make Hacktoberfest 2023 memorable together! 🎉
+
