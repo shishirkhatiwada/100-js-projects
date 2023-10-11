@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form Validation</title>
+  <style>
+    .error {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <h1>Form Validation</h1>
+
+  <form id="myForm" onsubmit="return validateForm()">
+    <label for="email">Email:</label>
+    <input type="email" id="email" required>
+    <span id="emailError" class="error"></span>
+
+    <br><br>
+
+    <label for="username">Username:</label>
+    <input type="text" id="username" required minlength="6">
+    <span id="usernameError" class="error"></span>
+
+    <br><br>
+
+    <label for="phoneNumber">Phone Number:</label>
+    <input type="tel" id="phoneNumber" required pattern="[0-9]{10}">
+    <span id="phoneNumberError" class="error"></span>
+
+    <br><br>
+
+    <label>
+      <input type="checkbox" id="termsAccepted" required>
+      I accept the terms and conditions
+    </label>
+    <span id="termsError" class="error"></span>
+
+    <br><br>
+
+    <input type="submit" value="Submit">
+  </form>
+
+  <script src="002_form.js"></script>
+</body>
+</html>
