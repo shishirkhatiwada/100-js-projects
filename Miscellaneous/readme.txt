@@ -1,1 +1,2 @@
-here you can upload extra projects that you have already made but it includes in this repo
+here you can upload extra projects that you have already made but it has already been includeed in this repo.
+this is made because this will help you look at your own project and others which will also help you improvise
