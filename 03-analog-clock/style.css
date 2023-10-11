@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: black;
+    justify-content: center;
+}
+.clock{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-linmHpTgAmv8wgRRe_t_6zaJJn4FbSCVhvECxKsM5WKNrN7CcWXdvlr6-iuw8j1xBsQ&usqp=CAU);
+    height: 400px;
+    width: 90%;
+    max-width: 400px;
+    border: 5px solid black;
+    border-radius: 50%;
+    position: relative;
+    background-position: center;
+    background-size: contain;
+}
+
+.hour,
+.minute,
+.second{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 4px;
+    width: 35%;
+    background: #000;
+    transform: rotate(-90deg);
+    transform-origin: left;
+    border-radius: 60%;
+}
+
