@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&family=Montserrat:wght@600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --green: #83e1d0;
+  --dark: #350363;
+  --background: #ffe9db;
+  --gradient-1: #ffe9db;
+  --gradient-2: #ffe9db;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  background-color: #491579;
+}
+
+main{
+  /* margin-top: 10rem; */
+  width: 30vw;
+  text-align: center;
+  background-color: var(--background);
+  border: solid var(--dark);
+  border-width: 0.8rem;
+  border-radius: 1rem;
+  padding: 8rem 5rem;
+  color: #1f2933;
+}
+
+h2{
+  font-size: 2.2rem;
+  margin: 2rem;
+}
+
+h3{
+  font-size: 3rem;
+}
+
+p{
+  font-size: 1.8rem;
+}
+
+.image{
+  width: 90%;
+  max-height: 22rem;
+  height: auto;
+  margin: 1rem 0 4rem 0;
+}
+
+.button-wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: -4rem;
+  margin-top: 2rem;
+}
+
+button {
+  min-width: 28rem;
+  background-image: linear-gradient(
+    92.88deg,
+    #455eb5 9.16%,
+    #5643cc 43.89%,
+    #673fd7 64.72%
+  );
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 2.5rem 6rem;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+  transition: all 0.5s;
+  user-select: none;
+  -webkit-user-select: none;
+  text-transform: capitalize;
+  /* touch-action: manipulation; */
+  font-family: "Josefin Sans", sans-serif;
+}
+
+button:hover{
+  box-shadow: rgba(80, 63, 205, 0.2) 0 1px 30px;
+  transition-duration: 0.1s;
+}
+
+button:last-child{
+  background: var(--dark);
+  margin-bottom: 0;
+}
+
+/* Our Game Area */
+#gameArea{
+  /* height: 35vh; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* margin-bottom: 40px; */
+}
+
+#newGameButton button{
+  margin: 2rem 0;
+}
+
+input{
+  border: 0.1rem solid lightgrey;
+  background: transparent;
+  margin: 4rem 0;
+  padding: 2rem 0;
+  width: 25rem;
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.stats{
+  text-align: left;
+  margin-bottom: 4rem;
+}
+
+.info{
+  /* display: flex;
+  justify-content: space-between;
+  align-items: center; */
+  margin-top: 3rem;
+}
+
+.info span{
+  font-size: 2rem;
+  color: #ff0511;
+}
+
+@media (max-width: 1200px) {
+  body {
+    width: 100vw;
+  }
+  main {
+    width: 50vw;
+    padding: 2rem;
+  }
+  input {
+    width: 20rem;
+  }
+}
+
+@media (max-width: 800px) {
+  body {
+    width: 100vw;
+  }
+  main {
+    width: 80vw;
+    padding: 2rem;
+  }
+  button {
+    min-width: 20rem;
+  }
+  input {
+    width: 20rem;
+  }
+  #newGameButton {
+    margin: 2rem 0;
+  }
+  .info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .info span {
+    margin-top: 1rem;
+    font-size: 1.6rem;
+  }
+}
