@@ -1,5 +1,7 @@
 # 100 JavaScript Projects for Hacktoberfest 2023
 
+WRITING THIS JUST FOR FUN HAHA
+
 [![Hacktoberfest 2023](https://img.shields.io/badge/Hacktoberfest-2023-blueviolet)](https://hacktoberfest.digitalocean.com/)
 
 Welcome to the Hacktoberfest 2023 JavaScript Projects repository. This repository is a collection of 100 JavaScript projects, spanning from smaller to medium-level complexity. It's an excellent opportunity for developers to contribute to open source and participate in Hacktoberfest.
@@ -44,16 +46,17 @@ List of JavaScript Projects
 Contributors
 A big thank you to all the contributors who have made this repository awesome:
 
-Shishir Khatiwada
+Shishir Khatiwada & monomooncodes
 License
 This repository is open-source and available under the MIT License. Feel free to use, modify, and distribute it as you see fit.
 
 Happy hacking, and let's make Hacktoberfest 2023 memorable together! 🎉
 
-csharp
-Copy code
+
 
 You can simply replace `"Project Name"` and `/project-name/README.md` with the actual project details as you add projects to your repository.
+
+
 
 
 
