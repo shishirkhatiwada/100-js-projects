@@ -1,8 +1,4 @@
-# 100 JavaScript Projects for Hacktoberfest 2023
-
 WRITING THIS JUST FOR FUN HAHA
-
-[![Hacktoberfest 2023](https://img.shields.io/badge/Hacktoberfest-2023-blueviolet)](https://hacktoberfest.digitalocean.com/)
 
 <p align="center">
   <img src="your_logo.png" alt="Your Logo" width="200">
@@ -21,3 +17,32 @@ Welcome to the Hacktoberfest 2023 JavaScript Projects repository. This repositor
 2. **Clone** your forked repository to your local machine:
    ```bash
    git clone https://github.com/your-username/100-js-projects.git
+
+3. Choose a JavaScript project from the list below or create a new one. Each project should have its own directory within the repository. Make sure your project aligns with the "smaller to medium level" complexity.
+
+4. Create a new branch for your work:
+
+```bash
+git checkout -b feature/your-feature-name
+
+
+5. Commit your changes:
+```bash
+git commit -m "Add your meaningful commit message here"
+
+
+🙌 Contributors
+A big thank you to all the contributors who have made this repository awesome:
+
+Shishir Khatiwada && monomooncodes
+📄 License
+This repository is open-source and available under the MIT License. Feel free to use, modify, and distribute it as you see fit.
+
+Happy hacking, and let's make Hacktoberfest 2023 memorable together! 🎉
+
+
+
+
+
+
+
