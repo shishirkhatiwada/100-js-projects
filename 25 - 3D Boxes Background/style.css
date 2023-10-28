@@ -1,135 +1,93 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 * {
   box-sizing: border-box;
 }
 
 body {
-  font-family: "Lato", sans-serif;
-  background-color: #333;
-  color: #222;
-  overflow-x: hidden;
+  background-color: #fafafa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
   margin: 0;
 }
 
-.container {
-  background-color: #fafafa;
-  transform-origin: top left;
-  transition: transform 0.5s linear;
-  width: 100vw;
-  min-height: 100vh;
-  padding: 50px;
-}
-
-.container.show-nav {
-  transform: rotate(-20deg);
-}
-
-.circle-container {
-  position: fixed;
-  top: -100px;
-  left: -100px;
-}
-
-.circle {
-  background-color: #ff7979;
-  height: 200px;
-  width: 200px;
-  border-radius: 50%;
-  position: relative;
-  transition: transform 0.5s linear;
-}
-
-.circle button {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  height: 100px;
-  background: transparent;
-  border: 0;
-  font-size: 26px;
+.magic {
+  background-color: #f9ca24;
   color: #fff;
-}
-
-.circle button:focus {
-  outline: none;
-}
-
-.circle button#open {
-  left: 60%;
-}
-
-.circle button#close {
-  top: 60%;
-  transform: rotate(90deg);
-  transform-origin: top left;
-}
-
-.container.show-nav + nav li {
-  transform: translateX(0);
-  transition-delay: 0.3s;
-}
-
-.container.show-nav .circle {
-  transform: rotate(-70deg);
-}
-
-nav {
+  font-family: "Poppins", sans-serif;
+  border: 0;
+  border-radius: 3px;
+  font-size: 16px;
+  padding: 12px 20px;
+  cursor: pointer;
   position: fixed;
-  bottom: 40px;
-  left: 0;
+  top: 20px;
+  right: 20px;
+  letter-spacing: 1px;
+  box-shadow: 0 3px rgba(249, 202, 36, 0.5);
   z-index: 100;
 }
 
-nav ul {
-  list-style-type: none;
-  padding-left: 30px;
+.magic:focus {
+  outline: none;
 }
 
-nav ul li {
-  text-transform: uppercase;
-  color: #fff;
-  margin: 40px 0;
-  transform: translateX(-100%);
-  transition: transform 0.4s ease-in;
-  cursor: pointer;
+.magic:active {
+  box-shadow: none;
+  transform: translateY(2px);
 }
 
-nav ul li i {
-  font-size: 20px;
-  margin-right: 10px;
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  height: 500px;
+  width: 500px;
+  position: relative;
+  transition: 0.4s ease;
 }
 
-nav ul li + li {
-  margin-left: 15px;
-  transform: translateX(-150%);
+.boxes.big {
+  height: 600px;
+  width: 600px;
 }
 
-nav ul li + li + li {
-  margin-left: 30px;
-  transform: translateX(-200%);
+.boxes.big .box {
+  transform: rotateZ(360deg);
 }
 
-.content {
-  max-width: 1000px;
-  margin: 50px auto;
+.box {
+  background-image: url("https://media.giphy.com/media/xYXr3haK7jQN3uGuv7/giphy.gif");
+  background-repeat: no-repeat;
+  background-size: 500px 500px;
+  position: relative;
+  height: 125px;
+  width: 125px;
+  transition: 0.4s ease;
 }
 
-.content h1 {
-  margin: 0;
+.box::after {
+  content: "";
+  background-color: #f6e58d;
+  position: absolute;
+  top: 8px;
+  right: -15px;
+  height: 100%;
+  width: 15px;
+  transform: skewY(45deg);
 }
 
-.content small {
-  color: #555;
-  font-style: italic;
-}
-
-.content p {
-  color: #333;
-  line-height: 1.5;
-}
-
-.content img {
-  max-width: 100%;
+.box::before {
+  content: "";
+  background-color: #f9ca24;
+  position: absolute;
+  left: 8px;
+  bottom: -15px;
+  width: 100%;
+  height: 15px;
+  transform: skewX(45deg);
 }
